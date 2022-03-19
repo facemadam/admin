@@ -1,6 +1,7 @@
 #navbar-brand {
     width: 225px;
     margin-right: 0;
+    padding: 0.65rem 1rem;
 }
 #sidebar-nav {
     width: 225px;
@@ -10,7 +11,7 @@
     transform: translateX(-225px);
 }
 #sidebar-nav > nav {
-    padding-top: 46px;
+    padding-top: 51px;
 }
 .sidebar-toggled #sidebar-nav {
     transform: translateX(0);
@@ -18,7 +19,7 @@
 #sidebar-content {
     padding-left: 225px;
     margin-left: -225px;
-    top: 46px;
+    top: 51px;
     z-index: 1028;
 }
 .sidebar-toggled #sidebar-content::before {

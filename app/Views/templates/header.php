@@ -13,7 +13,7 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark p-0">
-    <a class="navbar-brand ps-3 py-2 bg-secondary" id="navbar-brand" href="/">Admin</a>
+    <a class="navbar-brand bg-secondary" id="navbar-brand" href="/">Admin</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0 ms-2 me-4 me-lg-0 link-secondary" id="sidebar-toggle" href="#!">
       <i class="fas fa-bars"></i>
     </button>
@@ -53,23 +53,24 @@
         <!-- Sidebar Menu -->
         <div class="nav flex-nowrap flex-column">
 
-          <!-- Dashboard -->
-          <a class="nav-link d-flex align-items-center py-4 position-relative link-secondary" href="/dashboard">
-            <div class="me-2"><i class="fas fa-solid fa-house"></i></div>
-            메인
+          <!-- Main -->
+          <small class="fw-bold pt-4 ps-3 text-secondary">요약</small>
+          <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/dashboard">
+            <div class="me-3"><i class="fas fas fa-tachometer-alt"></i></div>
+            대시보드
           </a>
-          <small class="fw-bold py-2 ps-3 text-secondary">사이트</small>
 
-          <!-- User -->
+          <!-- Site -->
+          <small class="fw-bold pt-4 ps-3 text-secondary">사이트</small>
           <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/user">
-            <div class="me-2"><i class="fas fa-solid fa-user"></i></div>
+            <div class="me-3"><i class="fas fa-solid fa-user"></i></div>
             사용자관리
           </a>
 
           <!-- Board -->
           <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-board" aria-expanded="false"
             aria-controls="collapse-board">
-            <div class="me-2"><i class="fas fa-table"></i></div>
+            <div class="me-3"><i class="fas fa-table"></i></div>
             게시판관리
             <div class="d-inline-block ms-auto"><i class="fas fa-angle-down"></i></div>
           </a>
@@ -81,9 +82,9 @@
           </div>
 
           <!-- Admin -->
-          <small class="fw-bold pt-4 pb-2 ps-3 text-secondary">관리자</small>
+          <small class="fw-bold pt-4 ps-3 text-secondary">관리자</small>
           <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/admin">
-            <div class="me-2"><i class="fas fa-solid fa-user-gear"></i></div>
+            <div class="me-3"><i class="fas fa-solid fa-user-gear"></i></div>
             운영자관리
           </a>
         </div>
