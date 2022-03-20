@@ -9,7 +9,7 @@ class Dashboard extends BaseController
     public function index()
     {
         echo view('templates/header');
-        echo view('pages/dashboard');
+        echo view('pages/dashboard/index');
         echo view('templates/footer');
     }
 }

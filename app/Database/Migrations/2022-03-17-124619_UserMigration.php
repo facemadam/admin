@@ -15,28 +15,38 @@ class UserMigration extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'name' => [
-                'type' => 'VARCHAR',
-                'constraint' => '255',
-            ],
-            'email' => [
+            'username' => [
                 'type' => 'VARCHAR',
                 'unique' => true,
-                'constraint' => '255',
+                'constraint' => '100',
             ],
             'password' => [
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'name' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+            ],
+            'phone' => [
+                'type' => 'VARCHAR',
+                'constraint' => '11',
+                'null' => true,
+            ],
+            'email' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+                'null' => true,
+            ],
             'created_at datetime not null default current_timestamp',
             'updated_at datetime null on update current_timestamp',
         ]);
         $this->forge->addPrimaryKey('id');
-        $this->forge->createTable('user');
+        $this->forge->createTable('users');
     }
 
     public function down()
     {
-        $this->forge->dropTable('user');
+        $this->forge->dropTable('users');
     }
 }

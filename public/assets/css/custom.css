@@ -1,3 +1,12 @@
+body {
+    background-color: #f6f6f6;
+}
+.table > :not(:first-child) > :first-child > * {
+    border-top-width: 1px;
+}
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: #dee2e6;
+}
 #navbar-brand {
     width: 225px;
     margin-right: 0;
@@ -52,7 +61,4 @@
     .sidebar-toggled #sidebar-content::before {
         display: none;
     }
-}
-
-.sidebar-nav {
 }

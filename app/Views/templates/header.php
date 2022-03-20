@@ -62,22 +62,22 @@
 
           <!-- Site -->
           <small class="fw-bold pt-4 ps-3 text-secondary">사이트</small>
-          <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/user">
+          <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/users">
             <div class="me-3"><i class="fas fa-solid fa-user"></i></div>
-            사용자관리
+            사용자 관리
           </a>
 
           <!-- Board -->
           <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-board" aria-expanded="false"
             aria-controls="collapse-board">
             <div class="me-3"><i class="fas fa-table"></i></div>
-            게시판관리
+            게시판 관리
             <div class="d-inline-block ms-auto"><i class="fas fa-angle-down"></i></div>
           </a>
           <div class="collapse" id="collapse-board" aria-labelledby="headingOne" data-bs-parent="#sidebar-accordion">
             <nav class="nav d-flex flex-column ms-4">
-              <a class="nav-link link-secondary" href="/board/setting">게시판설정</a>
-              <a class="nav-link link-secondary" href="/board/menagement">게시글관리</a>
+              <a class="nav-link link-secondary" href="/board/setting">게시판 설정</a>
+              <a class="nav-link link-secondary" href="/board/management">게시글 관리</a>
             </nav>
           </div>
 
@@ -85,7 +85,7 @@
           <small class="fw-bold pt-4 ps-3 text-secondary">관리자</small>
           <a class="nav-link d-flex align-items-center py-2 position-relative link-secondary" href="/admin">
             <div class="me-3"><i class="fas fa-solid fa-user-gear"></i></div>
-            운영자관리
+            운영자 관리
           </a>
         </div>
       </div>
