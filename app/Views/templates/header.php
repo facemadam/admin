@@ -5,7 +5,13 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  <?php if (isset($style) && count($style)) {
+      foreach ($style as $key => $val) {
+          echo '<link rel="stylesheet" href="' . $val . '" />';
+      }
+  } ?>
+
   <title>Admin</title>
 </head>
 
@@ -100,4 +106,3 @@
 
   <!-- Content -->
   <div class="position-relative d-flex flex-column justify-content-between flex-grow-1" id="sidebar-content">
-    <main>

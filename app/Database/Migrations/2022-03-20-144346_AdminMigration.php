@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class UserMigration extends Migration
+class AdminMigration extends Migration
 {
     public function up()
     {
@@ -42,11 +42,11 @@ class UserMigration extends Migration
             'updated_at datetime null on update current_timestamp',
         ]);
         $this->forge->addPrimaryKey('id');
-        $this->forge->createTable('users');
+        $this->forge->createTable('admins');
     }
 
     public function down()
     {
-        $this->forge->dropTable('users');
+        $this->forge->dropTable('admins');
     }
 }
